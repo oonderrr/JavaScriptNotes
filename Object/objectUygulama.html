@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <script>
+
+        var personeller = [
+            {
+                ad : "Önder",
+                soyad : "Turtacı",
+                cinsiyet : "Erkek",
+                telefon : "0544 398 92 92",
+                adres : "Murat sosak no:48/9",
+                meslek : "Polis",
+                diller : "İngilizce"+" Almanca",
+                hobiler : "Tiktok" +  "Instagram"
+            },
+            {
+                ad : "Melek",
+                soyad : "Sonses",
+                cinsiyet : "Kadın",
+                telefon : "0535 666 66 66",
+                adres : "Kurt sokak No.31",
+                meslek : "Bankacı",
+                diller : ["Türkçe"," Kürtçe"],
+                hobiler : "Halıda yuvarlanmak" + " Takla atmak"
+            },
+            {
+                ad : "Mete",
+                soyad : "Gotten",
+                cinsiyet : "Erkeksi lezbiyen",
+                telefon : "0777 777 77 77",
+                adres : "Homa erektus sk. No.43",
+                meslek : "Fizik Profesörü",
+                diller : ["İngilizce", "Almanca", "Fransızca", "Latince"],
+                hobiler : ["Atom parçalamak","Kömür kazmak"]
+            }
+
+        ]
+
+        console.log(personeller[1].ad + " adlı personel "+personeller[1].diller.length+" dil bilmektedir.")
+        console.log(personeller[1].hobiler)
+
+        personeller[2].hobiler.forEach(function (hob) {
+            console.log(hob)
+        })
+
+    </script>
+
+</body>
+</html>
