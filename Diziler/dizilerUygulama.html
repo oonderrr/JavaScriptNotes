@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <script>
+
+        var now = 2024
+        var models = ["Toyota", "Mazda", "Mercedes", "Opel"]
+        var years = ["2015", "2012", "2014","2019"]
+
+        //Tüm modelleri yazır
+        for (var i = 0; i<models.length; i++){
+            console.log(models[i])
+        }
+
+        //Araç bilgi
+        for (i = 0; i<models.length; i++){
+            console.log(models[i] +" "+ years[i] + " model ve " + (now-years[i]) + " yaşında bir araçtır.")
+        }
+
+        //Kullanıcıdan veri alma
+
+        var modelGir = prompt("Lütfen araç modeli giriniz :")
+        var yılGir = prompt("Lütfen araç yılını giriniz :")
+
+        models.push(modelGir)
+        years.push(yılGir)
+
+        console.log(models)
+        console.log(years)
+
+    </script>
+
+</body>
+</html>

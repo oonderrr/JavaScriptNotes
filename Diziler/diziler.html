@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <script>
+        var marka = ["Opel", "Toyota", "Mazda", "Renault"]
+        var model = new Array("Corsa", "Corlla", "CX-3", "Clio")
+
+        console.log(marka[2])
+        console.log(model[2])
+
+        model[0] = "Astra"
+
+        console.log(model)
+
+        var auris = ["Toyota", "Auris", 42, true]
+
+        auris.push("Blue") //Dizinin sonuna Blue kelimesini ekler
+        auris.unshift("HB") //Dizinin başına HB kelimesini ekler
+        auris.pop() //Dizinin sondaki elemanını siler
+        auris.shift() //Dizinin baştaki elemanını siler
+
+        console.log(auris)
+
+        console.log(marka.indexOf("Mazda")) //2
+
+
+    </script>
+
+</body>
+</html>
