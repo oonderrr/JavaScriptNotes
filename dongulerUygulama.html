@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <script>
+
+        //10-100 arasındaki sayıları yazdır.
+        for (i=10; i<100; i++){
+            console.log(i)
+        }
+
+        //10-100 arrsındaki sayıları 5'er 5'er yazdır.
+        var sayi = 10
+
+        while (sayi<100){
+            console.log(sayi)
+            sayi = sayi + 5
+        }
+
+        //Login kontrolü
+
+        var kUsername = "guest"
+        var kPassword = "12345"
+        var loggedin = false
+
+        while (loggedin == false){
+            var username = prompt("Lütfen kullanıcı adınızı giriniz :")
+            var password = prompt("Lütfen parolanızı giriniz :")
+
+            if ((kUsername == username) && (kPassword == password)){
+                console.log("Giriş yapıldı.")
+                loggedin = true
+            }else {
+                console.log("Kullanıcı veya parolanızı yanlış girdiniz lütfen tekrar giriniz.")
+            }
+        }
+
+
+
+    </script>
+
+</body>
+</html>
