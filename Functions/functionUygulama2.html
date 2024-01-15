@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+  <script>
+
+    //Cümle özetleme uygylaması
+
+    var product = {
+      name : "Apple iPhone 15",
+      price : 45000,
+      description : "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+
+      summary : function() {
+
+        var ozetCumle = [];
+        var maxKarakter = 20;
+        var cumle = this.description;
+
+        if (maxKarakter > cumle.length){
+          this.shortDescription = cumle;
+        }else {
+          var kelimeler = cumle.split(" ") //Kelimeleri boşluklar ile bulmak için
+
+          var toplamKarakter = 0
+
+          for (var i = 0; i<kelimeler .length; i++){
+
+            ozetCumle.push(kelimeler[i])
+
+            toplamKarakter += kelimeler[i].length
+
+            if (toplamKarakter>maxKarakter){
+              break
+            }
+          }
+
+        }
+        this.shortDescription = ozetCumle.join(" ")
+
+      }
+    };
+
+    product.summary()
+
+
+    console.log(product)
+
+  </script>
+
+</body>
+</html>
