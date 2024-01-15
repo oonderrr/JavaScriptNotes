@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <script>
+        
+        function topla(a,b) {
+            return a+b;
+        }
+
+        sonuc = topla(4,9)
+
+        console.log(sonuc)
+
+        console.log(topla(30,70))
+
+        var now = 2024;
+
+        function yasHesapla(dogumTarihi){
+            return now-dogumTarihi
+        }
+
+        var ahmet = yasHesapla(2000)
+        var ali = yasHesapla(1998)
+
+        console.log(ahmet)
+        console.log(ali)
+
+        function emeklilikHesapla(ad,dogumTarihi){
+            var kullaniciYasi = yasHesapla(dogumTarihi)
+            var emeklilik = 65 - kullaniciYasi
+
+            if (emeklilik >0){
+                console.log(ad + " " + emeklilik + " yıl sonra emekli olacaktır.")
+            }else {
+                console.log(ad +" "+ (emeklilik*-1)+ " yıl önce emekli olmuştur.")
+            }
+        }
+
+        emeklilikHesapla("kerem",1996 )
+        emeklilikHesapla("Ahmet",1950)
+
+    </script>
+
+</body>
+</html>

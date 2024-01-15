@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <script>
+
+        //Tek çift hesaplama %=mod
+
+        function tekCift(sayi){
+
+            if (sayi%2 == 0){
+                console.log("Girdiğiniz sayı çifttir.")
+            } else {
+                console.log("Girdiğiniz sayı tektir.")
+            }
+        }
+
+        tekCift(39)
+
+
+        //Faktöriyel hesaplama
+        function faktoriyel(sayi){
+
+            var sonuc = 1
+
+            for (var i = 1; i <= sayi; i++){
+                sonuc = sonuc * i
+            }
+
+            console.log("Girdiğiniz sayının faktöriyeli : " +sonuc)
+        }
+
+        faktoriyel(5)
+        faktoriyel(0)
+
+        //Dizinin elemeanlarını ekrana yazdıran fonksiyon
+
+        function diziYazdır(dizi){
+
+            dizi.forEach(function(item){
+                console.log(item);
+            });
+
+        }
+
+        var arabalar = ["Toyota" + "Audi" + "Ferrai" + "Fiat" + "Tesla"]
+
+        diziYazdır(arabalar)
+
+    </script>
+
+</body>
+</html>
